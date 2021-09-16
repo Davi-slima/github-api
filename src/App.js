@@ -2,15 +2,19 @@ import Layout from './components/Layout';
 import Profile from './components/Profile';
 import Repositories from './components/Repositories';
 import { ResetCss } from './global/resetCss';
+import GithubProvider from './providers/githubProvider';
 
 const App = () => {
   return (
     <main>
-      <ResetCss />
-      <Layout>
-        <Profile />
-        <Repositories />
-      </Layout>
+      <GithubProvider>
+        <ResetCss />
+        <Layout>
+          <Profile />
+          <Repositories />
+        </Layout>
+      </GithubProvider>
+
     </main>
   );
 }

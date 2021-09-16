@@ -1,7 +1,10 @@
 import React from 'react';
+import useGithub from '../../hooks/githubHooks';
 import * as S from './styles';
 
 const Profile = () => {
+    const { githubState } = useGithub();
+
     return (
         <S.Wrapper>
             <S.Image
@@ -10,7 +13,7 @@ const Profile = () => {
             />
             <S.InfoUser>
                 <div>
-                    <h1>Davi Lima</h1>
+                    <h1>{githubState.user.name}</h1>
                     <S.Username>
                         <h3>Username: </h3>
                         <a href='https://github.com/Davi-slima' target='_blank' rel='noreferrer'>Davi-slima</a>
@@ -32,7 +35,7 @@ const Profile = () => {
                 </S.Status>
             </S.InfoUser>
         </S.Wrapper>
-    )
-}
+    );
+};
 
 export default Profile;
