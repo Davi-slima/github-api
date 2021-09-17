@@ -16,9 +16,9 @@ const Header = () => {
         <header>
             <S.Wrapper>
                 <input type="text" placeholder="Search profile..."
-                    onChange={submitGetUser}
+                    onChange={(e) => setUsername(e.target.value)}
                 />
-                <button type="submit">
+                <button type="submit" onClick={submitGetUser}>
                     <span>SEARCH</span>
                 </button>
             </S.Wrapper>

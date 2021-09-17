@@ -34,6 +34,12 @@ export const WrapperTab = styled(Tab)`
     &.is-selected {
         box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.3);
     }
+
+    &:hover {
+        background-color: rgba(244, 244, 244, 1);
+        box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+    }
+    
 `;
 
 WrapperTab.tabsRole = "Tab";
@@ -51,3 +57,9 @@ export const WrapperTabPanel = styled(TabPanel)`
 `;
 
 WrapperTabPanel.tabsRole = "TabPanel";
+
+export const WrapperList = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+`;
