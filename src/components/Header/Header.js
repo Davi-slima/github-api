@@ -8,7 +8,7 @@ const Header = () => {
 
     const submitGetUser = () => {
 
-        if(!username) return;
+        if (!username) return;
         return getUser(username);
     }
 

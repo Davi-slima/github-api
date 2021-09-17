@@ -4,7 +4,7 @@ import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 export const WrapperTabs = styled(Tabs)`
     font-size: 15px;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 35px;
 `;
 
 export const WrapperTabList = styled(TabList)`
@@ -46,7 +46,7 @@ WrapperTab.tabsRole = "Tab";
 
 export const WrapperTabPanel = styled(TabPanel)`
     padding: 15px;
-    border: 1px solid #d3d3d3;
+    border: 0 solid #d3d3d3;
     margin-top: -5px;
     display: none;
 

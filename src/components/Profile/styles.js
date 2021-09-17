@@ -9,10 +9,11 @@ export const Wrapper = styled.div`
 export const Status = styled.div`
     display: flex;
     align-items: center;
+    margin-top: 15px;
 
     div {
         text-align: center;
-        margin: 8px;
+        margin: 10px;
     }
 
 `;
@@ -41,7 +42,8 @@ export const InfoUser = styled.div`
     }
 `;
 
-export const Username = styled.div`
+
+export const UserGeneric = styled.div`
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -51,9 +53,9 @@ export const Username = styled.div`
     }
 
     a {
-        color: blue;
         font-size: 20px;
-        font-wight: bold;
+        color: rgba(0, 0, 255, 0.65);
+        font-weight: bold;
     }
 `;
 
@@ -61,5 +63,4 @@ export const Image = styled.img`
     border-radius: 50%;
     width: 170px;
     margin: 8px;
-    
 `;
